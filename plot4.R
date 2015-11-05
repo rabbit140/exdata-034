@@ -1,5 +1,11 @@
 plot4 <- function() {
       
+      if(!file.exists("household_power_consumption.txt")){
+            url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+            download.file(url, "household_power_consumption.zip")
+            unzip("household_power_consumption.zip")
+      }
+      
       power_data <- read.table("household_power_consumption.txt", header = TRUE, 
                                comment.char = "", nrows = 70000, sep = ";", na.strings = "?")
       
