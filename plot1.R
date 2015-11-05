@@ -19,9 +19,7 @@ plot1 <- function() {
       #Format dates
       Date <- as.Date(Date, format("%d/%m/%Y"))
       
-      
-      #Change "?" to "NA"
-      Global_active_power <- gsub("\\?", "NA", Global_active_power)
+      #Convert "Global_active_power" to numeric
       Global_active_power <- as.numeric(Global_active_power)
       
       #Make a histogram and save it to "plot1.png" file

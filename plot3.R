@@ -23,6 +23,7 @@ plot3 <- function() {
       Sub_metering_2 <- as.numeric(as.character(Sub_metering_2))
       Sub_metering_3 <- as.numeric(as.character(Sub_metering_3))
       
+      #Convert "Global_active_power" to numeric
       Global_active_power <- as.numeric(Global_active_power)
       
       #Make a histogram and save it to "plot3.png" file

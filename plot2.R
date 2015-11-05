@@ -21,8 +21,7 @@ plot2 <- function() {
       DateTime <- as.POSIXct(paste(Date, Time), format = "%Y-%m-%d %H:%M:%S")
       
       
-      #Change "?" to "NA"
-      Global_active_power <- gsub("\\?", "NA", Global_active_power)
+      #Convert "Global_active_power" to numeric
       Global_active_power <- as.numeric(Global_active_power)
       
       #Make a histogram and save it to "plot2.png" file

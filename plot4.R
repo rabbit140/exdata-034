@@ -27,7 +27,7 @@ plot4 <- function() {
       Voltage <- as.numeric(as.character(Voltage))
       Global_reactive_power <- as.numeric(as.character(Global_reactive_power))
       
-      
+      #Convert "Global_active_power" to numeric
       Global_active_power <- as.numeric(Global_active_power)
       
       #Make a histogram and save it to "plot4.png" file
