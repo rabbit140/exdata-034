@@ -35,7 +35,7 @@ plot4 <- function() {
       par(mfrow = c(2,2))
       plot(DateTime, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")
       plot(DateTime, Voltage, type = "l", xlab = "datetime")
-      plot(DateTime, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub")
+      plot(DateTime, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
       lines(DateTime, Sub_metering_2, col = "red")
       lines(DateTime, Sub_metering_3, col = "blue")
       legend("topright", legend = colnames(data)[7:9], lwd = 1, 
